@@ -1,0 +1,25 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.sidebar{
+    max-width: 200px;
+    min-width: 100px;
+    float: left;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    overflow-y: auto;
+    border: white solid 1px;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+}
