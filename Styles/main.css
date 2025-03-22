@@ -11,13 +11,15 @@ body{
     min-width: 100px;
     float: left;
     position: sticky;
-    height: 100vh;
+    height: fit-content;
     top: 0;
     left: 0;
     background-color: #333;
     padding: 0;
     overflow-y: auto;
-    border: white solid 1px;
+    border: white solid;
+    border-width: 0 1px 1px 0;
+    border-radius: 0 0 5px 0;
 }
 .app{
     width: 100vw;
