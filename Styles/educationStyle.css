@@ -4,6 +4,9 @@
 .maxw-75{
     max-width: 75%;
 }
+.maxw-85{
+    max-width: 85%;
+}
 .text-right{
     text-align: right;
 }
@@ -22,7 +25,7 @@
 
 @keyframes collapse{
     from{
-        height: 180px;
+        height: 350px;
     }
     to{
         height: 65px;
@@ -35,7 +38,7 @@
         height: 65px;
     }
     50%{
-        height: 150px;
+        height: 350px;
     }
     100%{
         height: fit-content;
