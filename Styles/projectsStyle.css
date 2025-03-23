@@ -5,6 +5,25 @@
 .maxw-95{
     max-width: 95%;
 }
+.abandoned{
+    color: red;
+}
+.skillCard{
+    max-width: fit-content;
+    background-color: lightgray;
+    margin: 15px;
+    padding: 5px 15px;
+}
+.skillCard:hover{
+    background-color: gainsboro;
+}
+.description{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.projectImage{
+    cursor:zoom-in;
+}
 
 .expandedProject{
     animation: expandProject .3s linear;

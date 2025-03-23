@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Styles/personalDetailsStyle.css">
     <link rel="stylesheet" href="Styles/educationStyle.css">
     <link rel="stylesheet" href="Styles/projectsStyle.css">
+    <link rel="stylesheet" href="Styles/modalStyle.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="Scripts/main.js" defer></script>
     <script src="Scripts/projectsScript.js" defer></script>
@@ -43,6 +44,19 @@
                 <div id="liveToast" class="toast bg-info rounded-4" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-body text-center">
                     <h5 id="toastMessage"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
+                  <div class="modal-content" id="imageModal">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Images</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="Images/LQI.png">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,15 +110,39 @@
                             <h2>Projects</h2>
                         </div>
                         <div class="card-content">
-                            <div id="project1" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject">
-                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around" id="project1Toggler">
-                                    <h2 class="col-10">Project 1</h2>
+                            <div id="project1" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject mb-5">
+                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around align-items-center" id="project1Toggler">
+                                    <h2 class="col-8">Low Quality Incremental</h2>
+                                    <h3 class="col-2 abandoned">
+                                        Abandoned
+                                    </h3>
                                     <div class="col-1 text-right" id="project1Expand">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
                                     </div>
                                 </div>
-                                <div class="card-content text-center">
-                                    start
+                                <div class="card-content text-center row mt-3 mb-3 ">
+                                    <div class="col-7">
+                                        <div class="row align-items-center">
+                                            <h3 class="col-3">Used skills: </h3>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>C#</h5>
+                                            </div>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>Wpf Application</h5>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="m-3 text-start"> A small clicker game that I worked on for a school 'group work' task
+                                            where each person had to make their own page then connect those pages with
+                                            some sort of menu system (all groups used the windows toolbar for the menu)
+                                            Once the task was over I exported my page to a new project and continued working on it
+                                            but I quickly realised that Wpf Applications are not really suited for clicker games 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
