@@ -1,7 +1,7 @@
 #personalDetails{
     margin: auto;
     margin-top: 50px;
-    background-color: darkslategrey;
+    background-color: rgb(44, 44, 44);
     border-radius: 45px;
     min-height: 200px;
     height: fit-content;
