@@ -8,6 +8,12 @@
 .abandoned{
     color: red;
 }
+.underDev{
+    color: green;
+}
+.onHold{
+    color: gray;
+}
 .skillCard{
     max-width: fit-content;
     background-color: lightgray;
