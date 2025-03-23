@@ -10,20 +10,22 @@
 .text-right{
     text-align: right;
 }
-.expanded{
-    animation: expanded .3s linear;
-    height: fit-content;
-}
-.collapsed{
-    height: 65px;
-    overflow: hidden;
-    animation: collapse .3s ease;
-}
+
 #educationToggler:hover{
     cursor: pointer;
 }
 
-@keyframes collapse{
+.expandedEducation{
+    animation: expandEducation .3s linear;
+    height: fit-content;
+}
+.collapsedEducation{
+    height: 65px;
+    overflow: hidden;
+    animation: collapseEducation .3s ease;
+}
+
+@keyframes collapseEducation{
     from{
         height: 350px;
     }
@@ -33,11 +35,11 @@
 }
 
 
-@keyframes expanded{
+@keyframes expandEducation{
     0%{
         height: 65px;
     }
-    50%{
+    90%{
         height: 350px;
     }
     100%{

@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="Styles/navigationStyle.css">
     <link rel="stylesheet" href="Styles/personalDetailsStyle.css">
     <link rel="stylesheet" href="Styles/educationStyle.css">
+    <link rel="stylesheet" href="Styles/projectsStyle.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="Scripts/main.js" defer></script>
+    <script src="Scripts/projectsScript.js" defer></script>
 </head>
 <body>
     <div class="row app">
@@ -56,7 +58,7 @@
                 </div>
             </div>
             <div class="mt-5">
-                <div id="education" class="card bg-secondary rounded m-auto expanded">
+                <div id="education" class="card bg-secondary rounded m-auto expandedEducation">
                     <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around" id="educationToggler">
                         <h2 class="col-10">Education</h2>
                         <div class="col-1 text-right" id="educationExpand">
@@ -88,7 +90,26 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="mt-5">
+                    <div id="projects" class="card bg-secondary rounded m-auto">
+                        <div class="card-header bg-dark text-white w-100">
+                            <h2>Projects</h2>
+                        </div>
+                        <div class="card-content">
+                            <div id="project1" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject">
+                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around" id="project1Toggler">
+                                    <h2 class="col-10">Project 1</h2>
+                                    <div class="col-1 text-right" id="project1Expand">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="card-content text-center">
+                                    start
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
