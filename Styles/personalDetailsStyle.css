@@ -1,0 +1,33 @@
+#personalDetails{
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 45px;
+    min-height: 200px;
+    height: fit-content;
+    border: grey solid 0.5px;
+    padding: 0;
+    width: 80vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.personalImage{
+    min-width: 190px;
+    min-height: 190px;
+    border-radius: 45px;
+    margin: 10px;
+    background-color: aqua; /*temp*/
+}
+.personalInfo{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#email{
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}

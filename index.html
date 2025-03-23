@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SzaeZal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/navigationStyle.css">
+    <link rel="stylesheet" href="Styles/personalDetailsStyle.css">
+    <link rel="stylesheet" href="Styles/educationStyle.css">
+    <link rel="stylesheet" href="Styles/projectsStyle.css">
+    <link rel="stylesheet" href="Styles/modalStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="Scripts/main.js" defer></script>
+    <script src="Scripts/projectsScript.js" defer></script>
+</head>
+<body>
+    <div class="row app">
+        <div class="col-2 sidebar flex-column">
+            <!-- need to make one
+            <div class="logo">
+                <img src="" alt="logo" title="logo"> 
+            </div> 
+            -->
+            <a class="nav-item" href="#personalDetails">
+                <div>
+                    Personal details
+                </div>
+            </a>
+            <a class="nav-item" href="#education">
+                <div>
+                    Education
+                </div>
+            </a>
+            <a class="nav-item" href="#projects">
+                <div>
+                    Projects
+                </div>
+            </a>
+        </div>
+        <div class="col main">
+            <div class="toast-container position-fixed end-0 p-3 ">
+                <div id="liveToast" class="toast bg-info rounded-4" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-body text-center">
+                    <h5 id="toastMessage"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
+                  <div class="modal-content" id="imageModal">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Images</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="Images/LQI.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div id="personalDetails">
+                <div class="personalImage">
+                    <img src="" alt="SzaeZal" title="yep that's me">
+                </div>
+                <div class="personalInfo">
+                    <h3>Name: Zalán Szász</h3>
+                    <h4>Online alias: SzaeZal</h4>
+                    <h5>email: <span id="email">zalan.szasz06@gmail.com</span></h5>
+                    <h5>github: <a href="https://github.com/b0szazal" target="_blank">https://github.com/b0szazal</a></h5>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div id="education" class="card bg-secondary rounded m-auto expandedEducation">
+                    <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around" id="educationToggler">
+                        <h2 class="col-10">Education</h2>
+                        <div class="col-1 text-right" id="educationExpand">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="card-content row justify-content-center">
+                        <div class="col-md-5 card bg-dark text-white m-4 maxw-75">
+                            <div class="card-header text-center">
+                                <h2>Completed</h2>
+                            </div>
+                            <div class="card-content maxw-85 m-auto">
+                                <h2>Primary School (1 - 8 grades)</h2>
+                                <h3>Domaszéki Bálint Sándor Általános Iskola és Alapfokú Művészeti Iskola</h3>
+                                <h5>31/08/2012 – 14/06/2020</h5>
+                                <h5>School's page: <a href="https://www.domaszeksuli.edu.hu" target="_blank">https://www.domaszeksuli.edu.hu</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-md-5 card bg-dark text-white m-4 maxw-75">
+                            <div class="card-header text-center">
+                                <h2>Ongoing</h2>
+                            </div>
+                            <div class="card-content maxw-85 m-auto">
+                                <h2>Hight School (9 - 13 grades)</h2>
+                                <h3>Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikum</h3>
+                                <h5>31/08/2020 – CURRENT</h5>
+                                <h5>School's page: <a href="https://www.vasvari.hu" target="_blank">https://www.vasvari.hu</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-5 ">
+                    <div id="projects" class="card bg-secondary rounded m-auto">
+                        <div class="card-header bg-dark text-white w-100">
+                            <h2>Projects</h2>
+                        </div>
+                        <div class="card-content">
+                            <div id="project1" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject mb-5">
+                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around align-items-center" id="project1Toggler">
+                                    <h2 class="col-7">Málenkij Meló</h2>
+                                    <h3 class="col-3 underDev">
+                                        Under development
+                                    </h3>
+                                    <div class="col-1 text-right" id="project1Expand">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="card-content text-center row mt-3 mb-3 ">
+                                    <div class="col-7">
+                                        <div class="row align-items-center m-2">
+                                            <h3 class="col-3">Used skills: </h3>
+                                            <div class="col-8 row align-items-center">
+                                                <div class="border rounded col skillCard">
+                                                    <h5>C#</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Wpf Application</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Blazor</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Ionic/Vue</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Html</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Css</h5>
+                                                </div>
+                                                <div class="border rounded col skillCard">
+                                                    <h5>Js</h5>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="description">
+                                            <p class="m-3 text-start"> A large software system that includes a Blazor web application, Wpf desktop application,
+                                                an Ionic/Vue mobile application, an SQL database and a .NET Core backend. This was the last project in High school 
+                                                that was part of my final exam. I was working in a group of 3 and I was the project coordinator. We worked on this 
+                                                from November 2024 to April 2025. The main part of the project was about employers to publish jobs and 
+                                                employees to apply to those jobs. These people would use the web and mobile applications and there would be
+                                                administrators who would use the desktop application. though we had a lot more ideas like messaging system, 
+                                                ability for employees/employers to apply for admin permissions these were not implemented in the end
+                                                (The images on the right show the features I worked on)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/malenkijmelo.png" alt="carousel incoming" title="MálenkijMeló Web Jobs listing" width="125%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project2" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject mb-5">
+                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around align-items-center" id="project2Toggler">
+                                    <h2 class="col-8">Roblox: Orb Incremental</h2>
+                                    <h3 class="col-2 onHold">
+                                        On hold
+                                    </h3>
+                                    <div class="col-1 text-right" id="project2Expand">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="card-content text-center row mt-3 mb-3 ">
+                                    <div class="col-7">
+                                        <div class="row align-items-center">
+                                            <h3 class="col-3">Used skills: </h3>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>Lue</h5>
+                                            </div>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>Roblox engine</h5>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="m-3 text-start"> A decent sized project that I started in August 2024
+                                                but stopped working on it when school started as I had to work on Málenkij Meló
+                                                but I want to continue its development once Málenkij Meló is handed in and I can't work on it anymore.
+                                                The main gimmick for this incremental is to reach the integer limit (~1.8e308) to reach a new chapter in the game
+                                                The game starts off fast with your orb multiplying themselves but the next chapters have linear gains
+                                                and lot more features like reset layers, challenges or 2 realms with currencies boosting other realm's currencies.
+                                                (Though most of these are only ideas for now)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/OI.png" alt="need to add this image" title="image of Orb Incremental" width="125%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project3" class="card bg-secondary rounded m-auto  mt-4 maxw-95 expandedProject mb-5">
+                                <div class="card-header bg-dark text-white row w-100 m-auto justify-content-around align-items-center" id="project3Toggler">
+                                    <h2 class="col-8">Low Quality Incremental</h2>
+                                    <h3 class="col-2 abandoned">
+                                        Abandoned
+                                    </h3>
+                                    <div class="col-1 text-right" id="project3Expand">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="card-content text-center row mt-3 mb-3 ">
+                                    <div class="col-7">
+                                        <div class="row align-items-center">
+                                            <h3 class="col-3">Used skills: </h3>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>C#</h5>
+                                            </div>
+                                            <div class="border rounded col-3 skillCard">
+                                                <h5>Wpf Application</h5>
+                                            </div>
+                                        </div>
+                                        <div class="description">
+                                            <p class="m-3 text-start"> A small clicker game that I worked on for a school 'group work' task
+                                            where each person had to make their own page then connect those pages with
+                                            some sort of menu system (all groups used the windows toolbar for the menu)
+                                            Once the task was over I exported my page to a new project and continued working on it
+                                            but I quickly realised that Wpf Applications are not really suited for clicker games 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

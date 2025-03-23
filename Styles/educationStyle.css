@@ -1,0 +1,48 @@
+#education{
+    width: 85%;
+}
+.maxw-75{
+    max-width: 75%;
+}
+.maxw-85{
+    max-width: 85%;
+}
+.text-right{
+    text-align: right;
+}
+
+#educationToggler:hover{
+    cursor: pointer;
+}
+
+.expandedEducation{
+    animation: expandEducation .3s linear;
+    height: fit-content;
+}
+.collapsedEducation{
+    height: 65px;
+    overflow: hidden;
+    animation: collapseEducation .3s ease;
+}
+
+@keyframes collapseEducation{
+    from{
+        height: 350px;
+    }
+    to{
+        height: 65px;
+    }
+}
+
+
+@keyframes expandEducation{
+    0%{
+        height: 65px;
+    }
+    90%{
+        height: 350px;
+    }
+    100%{
+        height: fit-content;
+    }
+}

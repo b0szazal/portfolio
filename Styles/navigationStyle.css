@@ -1,0 +1,22 @@
+.nav-item{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.nav-item>div{
+    text-align: center;
+}
+.nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.logo{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}

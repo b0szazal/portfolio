@@ -1,0 +1,64 @@
+#projects{
+    max-width: 85%;
+    margin: auto;
+}
+.maxw-95{
+    max-width: 95%;
+}
+.abandoned{
+    color: red;
+}
+.underDev{
+    color: green;
+}
+.onHold{
+    color: gray;
+}
+.skillCard{
+    max-width: fit-content;
+    background-color: lightgray;
+    margin: 15px;
+    padding: 5px 15px;
+}
+.skillCard:hover{
+    background-color: gainsboro;
+}
+.description{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.projectImage{
+    cursor:zoom-in;
+}
+
+.expandedProject{
+    animation: expandProject .3s linear;
+    height: fit-content;
+}
+.collapsedProject{
+    height: 65px;
+    overflow: hidden;
+    animation: collapseProject .3s ease;
+}
+
+@keyframes collapseProject{
+    from{
+        height: 350px;
+    }
+    to{
+        height: 65px;
+    }
+}
+
+
+@keyframes expandProject{
+    0%{
+        height: 65px;
+    }
+    90%{
+        height: 350px;
+    }
+    100%{
+        height: fit-content;
+    }
+}
