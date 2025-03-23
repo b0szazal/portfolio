@@ -7,3 +7,37 @@
 .text-right{
     text-align: right;
 }
+.expanded{
+    animation: expanded .3s linear;
+    height: fit-content;
+}
+.collapsed{
+    height: 65px;
+    overflow: hidden;
+    animation: collapse .3s ease;
+}
+#educationToggler:hover{
+    cursor: pointer;
+}
+
+@keyframes collapse{
+    from{
+        height: 180px;
+    }
+    to{
+        height: 65px;
+    }
+}
+
+
+@keyframes expanded{
+    0%{
+        height: 65px;
+    }
+    50%{
+        height: 150px;
+    }
+    100%{
+        height: fit-content;
+    }
+}
