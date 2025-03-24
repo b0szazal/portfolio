@@ -47,14 +47,14 @@
                   </div>
                 </div>
               </div>
-              <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
+              <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog modal-dialog-centered modal-xl d-flex justify-content-center " >
                   <div class="modal-content" id="imageModal">
                     <div class="modal-header">
                       <h1 class="modal-title fs-5" id="exampleModalLabel">Images</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" id="modalBody">
                       <img src="Images/LQI.png">
                     </div>
                   </div>
@@ -161,7 +161,7 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/malenkijmelo.png" alt="carousel incoming" title="MálenkijMeló Web Jobs listing" width="125%">
+                                        <img class="projectImage" onclick="SetModalImage(0)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/malenkijmelo.png" alt="carousel incoming" title="MálenkijMeló Web Jobs listing" width="125%">
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/OI.png" alt="need to add this image" title="image of Orb Incremental" width="125%">
+                                        <img class="projectImage" data-bs-toggle="modal" onclick="SetModalImage(1)"  data-bs-target="#Modal" src="Images/OI.png" alt="need to add this image" title="image of Orb Incremental" width="125%">
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@
                                         </div>
                                     </div>
                                     <div class="col-4">
-                                        <img class="projectImage" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">
+                                        <img class="projectImage" onclick="SetModalImage(2)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">
                                     </div>
                                 </div>
                             </div>
