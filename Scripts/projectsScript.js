@@ -14,3 +14,12 @@ for(let i=0; i<projectTogglers.length; i++){
         }
     })
 }
+
+const ModalImages=['<img class="projectImage" onclick="SetModalImage(0)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/malenkijmelo.png" alt="carousel incoming" title="MálenkijMeló Web Jobs listing" width="125%">',
+    '<img class="projectImage" data-bs-toggle="modal" onclick="SetModalImage(1)"  data-bs-target="#Modal" src="Images/OI.png" alt="image not found" title="image of Orb Incremental" width="125%">',
+    '<img class="projectImage" onclick="SetModalImage(2)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">'
+]
+
+const SetModalImage=(index)=>{
+    document.getElementById("modalBody").innerHTML=ModalImages[index]
+}
