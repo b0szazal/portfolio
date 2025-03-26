@@ -15,9 +15,27 @@ for(let i=0; i<projectTogglers.length; i++){
     })
 }
 
-const ModalImages=['<img class="projectImage" onclick="SetModalImage(0)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/malenkijmelo.png" alt="carousel incoming" title="MálenkijMeló Web Jobs listing" width="125%">',
-    '<img class="projectImage" data-bs-toggle="modal" onclick="SetModalImage(1)"  data-bs-target="#Modal" src="Images/OI.png" alt="image not found" title="image of Orb Incremental" width="125%">',
-    '<img class="projectImage" onclick="SetModalImage(2)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">'
+const ModalImages=[`
+    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Images/MM1.png" class="d-block w-100" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Images/MM2.png" class="d-block w-100" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>  `,
+    '<img  data-bs-toggle="modal" onclick="SetModalImage(1)"  data-bs-target="#Modal" src="Images/OI.png" alt="image not found" title="image of Orb Incremental" width="125%">',
+    '<img  onclick="SetModalImage(2)" data-bs-toggle="modal"  data-bs-target="#Modal" src="Images/LQI.png" alt="LowQualityIncremental Image" title="image of Low Quality Incremental" width="125%">'
 ]
 
 const SetModalImage=(index)=>{
