@@ -16,38 +16,80 @@ for(let i=0; i<projectTogglers.length; i++){
 }
 
 const ModalImages=[`
-    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel" >
+    <div id="modalCarousel" class="carousel slide w-100" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#modalCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active">
             <img src="Images/MM1.png" class="d-block w-100 projectImage" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Backend</h5>
+              <p>Documentation using scalar</p>
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item">
             <img src="Images/MM2.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web</h5>
+              <p>Clicking on Részletek opens a modal page</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="Images/MM3.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web</h5>
+              <p>clicking on értékelés opens a modal page</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="Images/MM4.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+             <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded">
+              <h5>Desktop</h5>
+              <p>clicking on a job gives its details</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="Images/MM5.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded">
+              <h5>Desktop</h5>
+              <p>navigaion between menus is possible with arrow keys</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="Images/MM6.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <img src="Images/MM6.png" class="d-block w-100 projectImage" alt="Málenkij Meló mobil Home page and Login page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded">
+              <h5>Mobil</h5>
+              <p>these 2 pages were the first ones to be completed on mobil</p>
+            </div> 
           </div>
           <div class="carousel-item">
-            <img src="Images/MM7.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <img src="Images/MM7.png" class="d-block w-100 projectImage" alt="Málenkij Meló mobil menu system and notifications" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded">
+              <h5>Mobil</h5>
+              <p>menu system uses 'single page' navigation</p>
+            </div> 
           </div>
           <div class="carousel-item">
-            <img src="Images/MM8.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <img src="Images/MM8.png" class="d-block w-100 projectImage" alt="Málenkij Meló mobil profil page and calendar page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded">
+              <h5>Mobil</h5>
+              <p>calendar highlights dates when the user has a job </p>
+            </div> 
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
