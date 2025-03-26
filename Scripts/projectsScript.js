@@ -19,10 +19,28 @@ const ModalImages=[`
     <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel" >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="Images/MM1.png" class="d-block w-100" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+            <img src="Images/MM1.png" class="d-block w-100 projectImage" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="Images/MM2.png" class="d-block w-100" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="Images/MM2.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM3.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM4.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM5.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM6.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM7.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
+          </div>
+          <div class="carousel-item active">
+            <img src="Images/MM8.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
