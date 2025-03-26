@@ -21,25 +21,25 @@ const ModalImages=[`
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="Images/MM1.png" class="d-block w-100 projectImage" alt="Málenkij Meló backend scalar documentation" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="Images/MM2.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM3.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM4.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM5.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM6.png" class="d-block w-100 projectImage" alt="Málenkij Meló Employer aplications page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM7.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop list Jobs page" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="Images/MM8.png" class="d-block w-100 projectImage" alt="Málenkij Meló Desktop menu with submenus" data-bs-toggle="modal" onclick="SetModalImage(0)"  data-bs-target="#Modal"> 
           </div>
         </div>

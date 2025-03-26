@@ -30,6 +30,8 @@
 .projectImage{
     cursor:zoom-in;
 }
+#modalBody>.carousel img{
+    max-height: 75vh;}
 
 .expandedProject{
     animation: expandProject .3s linear;
@@ -40,6 +42,7 @@
     overflow: hidden;
     animation: collapseProject .3s ease;
 }
+
 
 @keyframes collapseProject{
     from{
